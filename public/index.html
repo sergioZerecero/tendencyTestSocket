@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba socket</title>
+  <link rel="stylesheet" href="/main.css" />
+</head>
+
+<body>
+  <div>
+    <h2>Prueba de socket.io</h2>
+    <h3>Contador en:</h3>
+  </div>
+  <div style="align-items: center;">
+    <input type="number" id="counter" readonly value="0" style="border: none;" />
+    <span class="loader" id="loader" style="display: none;"></span>
+    <button id="btnSend" onclick="sendLabel()">Enviar nuevo</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+
+</html>
